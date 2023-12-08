@@ -33,7 +33,7 @@ try {
         "Accept"        = "application/json"
     }
 
-    Write-Verbose "Creating TOPdesk Incident for: [$($formObject.briefDescription)]"
+    Write-Verbose "Creating TOPdesk Incident: [$($formObject.briefDescription)]"
     $splatCreateIncidentParams = @{
         Uri         = "$($topdeskBaseUrl)/tas/api/incidents"
         Method      = "POST"
